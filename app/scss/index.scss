@@ -1,0 +1,11 @@
+@import "variables";
+@import "fonts";
+@import "libs";
+@import "general";
+
+// Pages
+@import "header";
+@import "home";
+@import "footer";
+
+@import "media"; /* Always at the end*/

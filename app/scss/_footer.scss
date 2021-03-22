@@ -1,0 +1,34 @@
+// FOOTER
+.footer {
+    flex: 0 0 auto;
+    color: $text_light;
+    font-size: 14px;
+    background: #f8f8f8;
+    &_logo {
+        height: 40px;
+    }
+    &_title {
+        text-transform: uppercase;
+        color: $text;
+        font-size: 16px;
+    }
+
+    &_list {
+        a {
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+    span {
+        color: $text;
+    }
+    &_copyright {
+        background: #fff;
+        &_text {
+            color: $text_light;
+            font-size: 12px;
+        }
+    }
+}
+

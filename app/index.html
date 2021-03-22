@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Home</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color -->
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Libs -->
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/slider-pro/css/slider-pro.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/index.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header_top">
+			<div class="container align-items-center d-flex justify-content-between pt-2 pb-2">
+				<div class="header_top_menu d-flex align-items-center">
+					<div class="header_top_menu_item menu_item pr-3">Login / Signup</div>
+
+					<div class="dropdown d_select">
+						<div class="menu_item menu_item_drop dropdown-toggle pr-3 ml-3" id="currancy" data-toggle="dropdown">USD</div>
+						<div class="dropdown-menu" aria-labelledby="currancy">
+							<ul>
+								<li class="dropdown-item">UAH</li>
+								<li class="dropdown-item">EUR</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex align-items-center">
+					<a href="#" class="header_top_menu_item menu_item pr-3 ml-3">Help</a>
+					<a href="#" class="header_top_menu_item menu_item pr-3 ml-3"><i class="far fa-heart"></i> Wishlist</a>
+					<div class="dropdown d_select">
+						<div class="menu_item menu_item_drop dropdown-toggle pr-3 ml-3" id="language" data-toggle="dropdown">Eng</div>
+						<div class="dropdown-menu" aria-labelledby="language">
+							<ul>
+								<li class="dropdown-item">Рус</li>
+								<li class="dropdown-item">Укр</li>
+							</ul>
+						</div>
+					</div>
+					<button class="header_button_app" type="submit">Download App</button>
+				</div>
+			</div>
+		</div>
+		<div class="header_content pt-3 pb-3">
+			<div class="align-items-center container d-flex justify-content-between">
+				<a href="/" class="header_logo flex-shrink-0 mr-2">
+					<img src="img/logo_white.png" alt="img" class="d-none d-lg-block">
+					<img src="img/logo_mob.png" alt="img" class="d-block d-lg-none">
+				</a>
+				<div class="d-flex align-items-center">
+					<form class="search_form d-flex align-items-center" action="#">
+						<input class="search_form_input" type="search" name="search" placeholder="Search..." />
+
+						<div class="dropdown search_form_categories">
+							<div class="search_form_categories_field dropdown-toggle pr-3 pl-3 d-flex align-items-center"
+								id="categories" data-toggle="dropdown">All Categories</div>
+							<div class="dropdown-menu" aria-labelledby="categories">
+								<ul>
+									<li class="dropdown-item">Accessories</li>
+									<li class="dropdown-item">Decors</li>
+								</ul>
+							</div>
+						</div>
+						<button class="search_form_btn" type="submit"><i class="fas fa-search"></i></button>
+					</form>
+					<div class="basket d-flex align-items-center">
+						<button class="ml-4 basket_btn" type="submit"><i class="fas fa-shopping-bag"></i></button>
+						<div class="basket_item d-md-flex align-items-center d-none">0 Item: <span>$0.00</span> </div>
+						<div class="burger d-md-none ml-2 d-flex d-block">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 d-none d-lg-block">
+						<div class="departments_menu d-flex align-items-center justify-content-between pl-3 pr-3">Departments <i class="fas fa-bars"></i></div>
+					</div>
+					<div class="col-12 col-lg-9">
+						<div class="header_menu_content d-flex align-items-center justify-content-between">
+							<ul class="d-flex align-items-center">
+								<li class="ml-4 header_menu_shop">
+									<a class="" href="#">Home</a>
+								</li>
+								<li class="ml-4 header_menu_shop">
+									<a class="" href="#">Shop</a>
+								</li>
+								<li class="ml-4 header_menu_shop">
+									<a class=" label hot" href="#" data-content="hot">Fashion</a>
+								</li>
+								<li class="ml-4 header_menu_shop">
+									<a class=" label new" href="#" data-content="new">Electronics</a>
+								</li>
+								<li class="ml-4 header_menu_shop">
+									<a class="" href="#">pages</a>
+								</li>
+								<li class="ml-4 header_menu_shop">
+									<a class="" href="#">Features</a>
+								</li>
+								<li class="ml-4 header_menu_shop">
+									<a class="" href="#">BLog</a>
+								</li>
+							</ul>
+							<div class="call_us mr-3">Call US Free: <a class="p-1 ml-1" href="tel:1-800-777-7889">1-800-777-7889</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="main_menu_content menu_mob">
+			<div class="d-flex justify-content-end mt-2 mr-3">
+				<li class="burger d-md-none ml-2 d-flex d-block">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+				</li>
+			</div>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/fashion_clothing.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/mobile_phones.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/sports_outerwear.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/foods_fruits.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/beauty_health.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/shoes_bags.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/decors_home.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/electronics_hitech.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/accessories.png" alt="img"></a>
+			</li>
+			<li class="main_list p-3">
+				<a href="#"><img src="img/digital_software.png" alt="img"></a>
+			</li>
+		</ul>
+	</header>
+
+
+	<main class="main">
+		<!-- Start Page -->
+        <div class="container pt-5 pb-5">
+            <ul>
+                <li>
+                    <a href="home.html">home</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="contactus.html">contact us</a>
+                </li>
+                <li>
+                    <a href="blog.html">blog</a>
+                </li>
+                <li>
+                    <a href="blogpost.html">blog post</a>
+                </li>
+                <li>
+                    <a href="shop_sidebar.html">shop sidebar</a>
+                </li>
+                <li>
+                    <a href="checkout.html">checkout</a>
+                </li>
+            </ul>
+        </div>
+
+	</main>
+	<!-- section services -->
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 service_content">
+                    <div class="p-4">
+                        <div class="service_img mb-3 d-flex align-items-center justify-content-center">
+                            <img src="img/shipping.png" alt="img">
+                        </div>
+                        <div class="service_title mb-2">FREE SHIPPING</div>
+                        <div class="service_text">Free Shipping on World wide Order
+                            Over $99.</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 service_content">
+                    <div class="p-4">
+                        <div class="service_img mb-3 d-flex align-items-center justify-content-center">
+                            <img src="img/trusted.png" alt="img">
+                        </div>
+                        <div class="service_title mb-2">Trusted Pay</div>
+                        <div class="service_text">100% Payment Protection &
+                            Easy Return</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 service_content">
+                    <div class="p-4">
+                        <div class="service_img mb-3 d-flex align-items-center justify-content-center">
+                            <img src="img/secured.png" alt="img">
+                        </div>
+                        <div class="service_title mb-2 ">Secured Payment</div>
+                        <div class="service_text">All Major Credit & Debit Cards
+                            Accepted</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 service_content">
+                    <div class="p-4">
+                        <div class="service_img mb-3 d-flex align-items-center justify-content-center">
+                            <img src="img/shop.png" alt="img">
+                        </div>
+                        <div class="service_title mb-2">Shop on app</div>
+                        <div class="service_text">Just Dowload our App & Shop
+                            With Best Offers!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section_social -->
+    <div class="section_social">
+        <div class="container mb-3 mt-4">
+            <div class="row">
+                <div class="col-2 d-none d-lg-flex align-items-center">
+                    <img src="img/trav.png" alt="img">
+                    <div class="social_text pl-3">SIGNUP to NEWSLETTER</div>
+                </div>
+                <div class="col-md-6  mb-2">
+                    <form class="social_form d-flex align-items-center" action="#">
+                        <input type="text" name="enter_your_email_address" placeholder="Enter Your Email Address" required />
+                        <button class="social_btn" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 col-lg-4 social_cta d-flex align-items-center">
+                    <div class="social_text mr-3  d-lg-flex mt-2 mb-3">Keep in touch</div>
+                    <div class="social_net d-flex">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<footer class="footer pt-5">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="footer_item col-lg-3 col-md-6 mb-4">
+                    <div class="footer_logo mb-3">
+                        <img src="img/logo.png" alt="img">
+                    </div>
+                    <div class="mb-2">Many say exploration is part of our dest but it’s actually our duty to future and their.</div>
+                    <div class="mb-2"><span>Address:</span> <a href="https://www.google.com/maps/place/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/data=!4m2!3m1!1s0x4127a09f63ab0f8b:0x2d4c18681aa4be0a?sa=X&ved=2ahUKEwjYpNjSktXsAhXQwosKHZjWAtIQ8gEwAHoECAsQAQ" target="_blank">868 Fake Street, New York</a></div>
+                    <div class="mb-2"><span>Phone:</span> <a href="tel:(08)0847521499">(08) 08 4752 1499</a></div>
+                    <div class="mb-2"><span>Email:</span> <a href="info@supermart.com" target="_blank">info@supermart.com</a></div>
+                </div>
+                <div class="footer_item col-lg-3 col-md-6 mb-4">
+                    <div class="footer_title mb-4">company</div>
+                    <ul class="footer_list">
+                        <li class="mb-2">
+                            <a href="#">Discount Vouches</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Spring Collection</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Trending</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Best Sellers</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Special Deals</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item col-lg-3 col-md-6 mb-4">
+                    <div class="footer_title mb-4">POLICY INFO</div>
+                    <ul class="footer_list">
+                        <li class="mb-2">
+                            <a href="#">Orders & Returns</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Advanced Search</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Help & FAQs</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Consultant</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Store Locations</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_item col-lg-3 col-md-6 mb-4">
+                    <div class="footer_title mb-4">My Account</div>
+                    <ul class="footer_list">
+                        <li class="mb-2">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Delivery Information</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contactus.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright p-3">
+            <div class="container">
+                <div class="footer_copyright_text">© Copyright - Supermart Template by DesignFalls</div>
+            </div>
+        </div>
+    </footer>
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap/js/popper.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+	<script src ="libs/slider-pro/js/jquery.sliderPro.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

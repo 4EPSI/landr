@@ -1,0 +1,24 @@
+$default: 'Roboto', sans-serif;
+
+$accent: #408de4;
+$secondary: #ffd200;
+$text: #222222;
+$text_secondary: #666666;
+$text_light: #888888;
+$sale: #ea5c5c;
+$new: #ffb128;
+$border: #e8e8e8;
+
+
+
+/* Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"*/
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+/* $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1260px); */
+
+$gutter: $grid-gutter-width;
