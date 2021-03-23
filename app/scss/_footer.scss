@@ -1,12 +1,27 @@
 // FOOTER
 .footer {
     flex: 0 0 auto;
-    color: $text_light;
-    font-size: 14px;
-    background: #f8f8f8;
-    &_logo {
-        height: 40px;
+    background: #3b5157;
+    height: 50px;
+    &-copyrights {
+        color: #78a8b8;
+        font-size: 18px;
     }
-
+    &-soc {
+        height: 30px;
+        width: 30px;
+        background: $accent;
+        color: #fff;
+    }
+    .facebook {
+        background: #6284ca;
+    }
+    .vk {
+        background: #54769a;
+    }
+    &-text {
+        color: #78a8b8;
+        font-size: 26px;
+    }
 }
 
