@@ -318,3 +318,89 @@
 		text-align: center;
 	}
 }
+.star {
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.active {
+	color: gold;
+}
+// TRAVEL
+.travel {
+	height: 100vh;
+	&-title {
+		font-size: 30px;
+		color: #2c2e37;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&-content {
+		height: 380px;
+		width: 200px;
+	}
+	&-block {
+		width: 20%;
+	}
+	&-item {
+		font-size: 28px;
+		color: #ffffff;
+	}
+	&-text {
+		color: #ffffff;
+		font-size: 16px;
+	}
+	&-old {
+		font-size: 18px;
+		color: #ffffff;
+	}
+	&-price {
+		font-size: 26px;
+		color: #ffffff;
+	}
+}
+// Gallery
+.gallery {
+	&-title {
+		font-size: 30px;
+		color: #2c2e37;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&-img {
+		height: 340px;
+		width: 260px;
+		&-center {
+			height: 240px;
+			width: 365px;
+		}
+		&-left {
+			height: 345px;
+			width: 460px;
+		}
+	}
+}
+
+.grid-test .item:nth-child(1) {
+    height: 250px;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.grid-test .item:nth-child(2) {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+}
+.grid-test .item:nth-child(3) {
+    height: 230px;
+}
+.grid-test .item:nth-child(4) {
+    height: 230px;
+}
+.grid-test .item:nth-child(5) {
+    height: 230px;
+}
+.grid-test .item:nth-child(6) {
+  height: 100px;
+  grid-column: 1 / span 4;
+  grid-row: 3;
+}
