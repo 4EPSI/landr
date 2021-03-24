@@ -1,7 +1,37 @@
 // HEADER
 .header {
 	flex: 0 0 auto;
-	height: 50px;
+	height: 90px;
+	// background: #fff;
+	position: relative;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+	// &:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	background: #fff;
+	// 	filter: blur(3px);
+	// 	opacity: 0.7;
+	// }
+	&.active {
+		background: #fff;
+		color: black;
+		box-shadow: 2px 2px 13px 0px rgba(34, 60, 80, 0.29);
+	}
+	&.active .color {
+		filter: invert(1);
+	}
+	&-content {
+		position: relative;
+	}
 	&-logo {
 		color: #36aeea;
 		font-size: 30px;
@@ -9,7 +39,8 @@
 	}
 	&-item {
 		font-size: 14px;
-		color: #9daeb6;
+		// color: #9daeb6;
+		color: inherit;
 		text-transform: uppercase;
 		border-bottom: 2px solid transparent;
   		padding-bottom: 10px;
@@ -18,10 +49,15 @@
 		}
 	}
 	.color {
-		color: #95a5ad;
+		// color: #95a5ad;
+		color: #fff;
 	}
 	&-call {
 		border: 3px solid $accent;
 		border-radius: 3px;
+		color: $accent;
+		:hover {
+			color: #fff;
+		}
 	}
 }

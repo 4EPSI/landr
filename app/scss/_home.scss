@@ -322,10 +322,11 @@
 	color: #fff;
 	font-size: 15px;
 	cursor: pointer;
+	&-active {
+		color: gold;
+	}
 }
-.active {
-	color: gold;
-}
+
 // TRAVEL
 .travel {
 	height: 100vh;
@@ -357,6 +358,23 @@
 	&-price {
 		font-size: 26px;
 		color: #ffffff;
+	}
+	&-block-price {
+		position: relative;
+	}
+	&-price-content {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: silver;
+			filter: blur(3px);
+			opacity: 0.7;
+		}
 	}
 }
 // Gallery
