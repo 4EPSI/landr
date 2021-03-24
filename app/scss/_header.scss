@@ -27,7 +27,8 @@
 		box-shadow: 2px 2px 13px 0px rgba(34, 60, 80, 0.29);
 	}
 	&.active .color {
-		filter: invert(1);
+		// filter: invert(1);
+		color: black;
 	}
 	&-content {
 		position: relative;
@@ -60,4 +61,103 @@
 			color: #fff;
 		}
 	}
+}
+.burger {
+	height: 25px;
+	width: 30px;
+	position: relative;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+    z-index: 1;
+	span {
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		background: #333;
+		border-radius: 4px;
+		opacity: 1;
+		left: 0;
+		transition: .25s ease-in-out;
+		&:nth-child(1) {
+  			top: 0px;
+		}
+		&:nth-child(2),
+		&:nth-child(3) {
+			top: 10px;
+		}
+		&:nth-child(4) {
+			top: 20px;
+		}
+	}
+	&.active {
+		span {
+			&:nth-child(1) {
+				top: 10px;
+				width: 0%;
+				left: 50%;
+			}
+			&:nth-child(2) {
+				transform: rotate(45deg);
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+			&:nth-child(4) {
+				top: 10px;
+				width: 0%;
+				left: 50%;
+			}
+		}
+	}
+}
+.burger {
+    display: none;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+    span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #333;
+        border-radius: 4px;
+        opacity: 1;
+        left: 0;
+        transition: .25s ease-in-out;
+        &:nth-child(1) {
+            top: 0px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 10px;
+        }
+        &:nth-child(4) {
+            top: 20px;
+        }
+    }
+    &.active {
+        span {
+            &:nth-child(1) {
+                top: 10px;
+                width: 0%;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+            &:nth-child(4) {
+                top: 10px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+    }
 }
