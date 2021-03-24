@@ -370,37 +370,147 @@
 	&-img {
 		height: 340px;
 		width: 260px;
+		img {
+			overflow: hidden;
+			height: 340px;
+			width: 260px;
+		}
 		&-center {
 			height: 240px;
-			width: 365px;
+			width: 360px;
+			img {
+				overflow: hidden;
+				height: 240px;
+				width: 360px;
+			}
 		}
 		&-left {
 			height: 345px;
-			width: 460px;
+			width: 455px;
+			img {
+				overflow: hidden;
+				height: 345px;
+				width: 455px;
+			}
+		}
+		&-bottom {
+			height: 280px;
+			width: 260px;
+			img {
+				overflow: hidden;
+				height: 280px;
+				width: 260px;
+			}
+			&-center {
+				transform: translate(0px, -100px);
+				height: 380px;
+				width: 360px;
+				img {
+					overflow: hidden;
+					height: 380px;
+					width: 360px;
+				}
+			}
+			&-right {
+				height: 280px;
+				width: 455px;
+				img {
+					overflow: hidden;
+					height: 280px;
+					width: 455px;
+				}
+			}
 		}
 	}
 }
-
-.grid-test .item:nth-child(1) {
-    height: 250px;
-    grid-column: 1 / span 3;
-    grid-row: 1;
+// BREANDS
+.breand {
+	background: #f8f9fa;
+	height: 180px;
+	&-img {
+		filter: grayscale(1);
+		opacity: 0.3;
+		height: 50px;
+		width: 100%;
+		// img {
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	overflow: hidden;
+		// }
+	}
 }
-.grid-test .item:nth-child(2) {
-    grid-column: 4;
-    grid-row: 1 / span 2;
-}
-.grid-test .item:nth-child(3) {
-    height: 230px;
-}
-.grid-test .item:nth-child(4) {
-    height: 230px;
-}
-.grid-test .item:nth-child(5) {
-    height: 230px;
-}
-.grid-test .item:nth-child(6) {
-  height: 100px;
-  grid-column: 1 / span 4;
-  grid-row: 3;
+// Clients
+.client {
+	height: 1280px;
+	&-title {
+		font-size: 30px;
+		color: #2c2e37;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&-quote {
+		font-size: 24px;
+		color: #bcbcbc;
+	}
+	&-text {
+		font-size: 18px;
+		color: #bcbcbc;
+	}
+	&-img {
+		height: 65px;
+		width: 65px;
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&-name,
+	&-position {
+		font-size: 16px;
+		color: $accent;
+	}
+	&-form {
+		transform: translate(0px, 250px);
+		// height: 500px;
+		height: 100%;
+		width: 510px;
+		border-radius: 3px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #00bcd4;
+			filter: blur(3px);
+			opacity: 0.6;
+		}
+		&-content {
+			position: relative;
+		}
+		&-title {
+			font-size: 36px;
+			color: #383e4a;
+			text-transform: uppercase;
+		}
+		&-text {
+			font-size: 16px;
+			color: #383e4a;
+		}
+	}
+	&-input {
+		width: 100%;
+		height: 60px;
+		border: none;
+		border-radius: 3px;
+	}
+	&-btn {
+		width: 100%;
+		height: 70px;
+	}
 }
