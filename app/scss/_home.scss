@@ -55,6 +55,7 @@
 // ABOUT US
 .about {
 	height: 700px;
+	overflow: hidden;
 	&-img {
 		height: 560px;
 		width: 810px;
@@ -311,6 +312,7 @@
 	&-item {
 		font-size: 18px;
 		color: #2c2e37;
+		text-align: center;
 	}
 	&-text {
 		font-size: 16px;
@@ -391,62 +393,57 @@
 		img {
 			object-fit: cover;
 			overflow: hidden;
-			height: 340px;
-			width: 260px;
+			height: 100%;
+			width: 100%;
 		}
 		&-center {
 			height: 240px;
 			width: 360px;
-
 			img {
 				object-fit: cover;
 				overflow: hidden;
-				height: 240px;
-				width: 360px;
+				height: 100%;
+				width: 100%;
 			}
 		}
 		&-left {
 			height: 345px;
 			width: 455px;
-
 			img {
 				object-fit: cover;
 				overflow: hidden;
-				height: 345px;
-				width: 455px;
+				height: 100%;
+				width: 100%;
 			}
 		}
 		&-bottom {
 			height: 280px;
 			width: 260px;
-
 			img {
 				object-fit: cover;
 				overflow: hidden;
-				height: 280px;
-				width: 260px;
+				height: 100%;
+				width: 100%;
 			}
 			&-center {
 				transform: translate(0px, -100px);
 				height: 380px;
 				width: 360px;
-
 				img {
 					object-fit: cover;
 					overflow: hidden;
-					height: 380px;
-					width: 360px;
+					height: 100%;
+					width: 100%;
 				}
 			}
 			&-right {
 				height: 280px;
 				width: 455px;
-
 				img {
 					object-fit: cover;
 					overflow: hidden;
-					height: 280px;
-					width: 455px;
+					height: 100%;
+					width: 100%;
 				}
 			}
 		}
@@ -526,10 +523,12 @@
 			font-size: 36px;
 			color: #383e4a;
 			text-transform: uppercase;
+			text-align: center;
 		}
 		&-text {
 			font-size: 16px;
 			color: #383e4a;
+			text-align: center;
 		}
 	}
 	&-input {
@@ -543,3 +542,54 @@
 		height: 70px;
 	}
 }
+
+
+// .test {
+// 	height: 50px;
+// 	width: 300px;
+// 	background:
+// 	linear-gradient(135deg, white 35%, transparent 25%) -25px 0,
+// 	linear-gradient(225deg, white 35%, transparent 25%) -25px 0,
+// 	linear-gradient(315deg, white 35%, transparent 25%),
+// 	linear-gradient(45deg, white 35%, transparent 25%);
+// 	background-size: 50px 50px;
+// 	background-color: black;
+// }
+
+
+
+
+
+
+
+
+
+
+// .zigzag {
+// 	position: relative;
+// 	width: 100%;
+// 	height: 1px;
+// }
+// .zigzag:before {
+//    content: "";
+//    display: block;
+//    position: absolute;
+//    top: -10px;
+//    width: 100%;
+//    height: 10px;
+// }
+// .container4 {
+// 	background: #777777;
+// }
+// .container4:before {
+//  background:
+// 	linear-gradient(
+// 	45deg, transparent 33.333%,
+// 	#777777 33.333%, #777777 66.667%,
+// 	transparent 66.667%),
+//   linear-gradient(
+// 	-45deg, transparent 33.333%,
+// 	#777777 33.333%, #777777 66.667%,
+// 	transparent 66.667%);
+// 	 background-size: 20px 40px;
+// }

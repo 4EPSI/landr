@@ -2,7 +2,57 @@
 
 /* ==========  Desktop First  ========== */
 
-@media only screen and (max-width: 1365px) {
+// @media only screen and (max-width: 1365px) {
+//     .about-img {
+//         width: 100%;
+//         height: 400px;
+//         transform: translate(0,100px);
+//     }
+//     .about-img-bottom {
+//         width: 100%;
+//         transform: translate(0,-50px);
+//     }
+//     .journal-block {
+//         width: 50%;
+//     }
+//     .journal-tree:before {
+//         content: "";
+//         position: absolute;
+//         top: 50px;
+//         right: 465px;
+//         border: 20px solid transparent;
+//         border-right: 20px solid #fff;
+//     }
+//     .journal-water:before {
+//         content: "";
+//         position: absolute;
+//         top: 50px;
+//         left: -40px;
+//         border: 20px solid transparent;
+//         border-right: 20px solid #fff;
+//     }
+//     .work-block:before {
+//         width: 190px;
+//     }
+//     .travel {
+//         height: auto;
+//         padding-bottom: 30px;
+//     }
+//     .travel-block-content {
+//         flex-wrap: wrap;
+//     }
+//     .travel-content {
+//         width: 250px;
+//     }
+//     .travel-block {
+//         width: 30%;
+//         margin-left: auto !important;
+//         margin-right: auto !important;
+//         margin-bottom: 15px;
+//     }
+// }
+/* ≥1200px */
+@include media-breakpoint-down(lg) {
     .about-img {
         width: 100%;
         height: 400px;
@@ -46,30 +96,34 @@
     }
     .travel-block {
         width: 30%;
-        margin-left: auto !important;
-        margin-right: auto !important;
         margin-bottom: 15px;
     }
 }
-/* ≥1200px */
-@include media-breakpoint-down(lg) {
 
-}
-
-@media only screen and (max-width: 1023px) {
-    .travel-content {
-        width: 200px;
-    }
-    .work-block:before {
-        width: 130px;
-    }
-    .journal-tree:before {
-        right: 345px;
-    }
-}
+// @media only screen and (max-width: 1023px) {
+//     .travel-content {
+//         width: 200px;
+//     }
+//     .work-block:before {
+//         width: 130px;
+//     }
+//     .journal-tree:before {
+//         right: 345px;
+//     }
+// }
 
 /* ≥992px */
 @include media-breakpoint-down(md) {
+    .work-block:before {
+        width: 130px;
+    }
+    .travel-content {
+        width: 200px;
+    }
+}
+
+/* ≥768px */
+@include media-breakpoint-down(sm) {
     .header {
         background:#fff;
         z-index: 3;
@@ -127,11 +181,98 @@
         height: 220px;
         transform: translate(120px,-70px);
     }
-}
-
-/* ≥768px */
-@include media-breakpoint-down(sm) {
-    
+    .about {
+        height: auto;
+    }
+    .about-img-bottom {
+        width: 315px;
+        height: 300px;
+        transform: translate(55px, -65px);
+    }
+    .about-img {
+        transform: translate(0,0);
+    }
+    .about-title,
+    .about-btn {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    // .journal-tree:before {
+    //     right: 192px;
+    // }
+    .journal-block {
+        width: 100%;
+    }
+    .journal-water:before,
+    .journal-love:before,
+    .journal-tree:before {
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 20px solid transparent;
+        border-bottom: 20px solid #fff;
+    }
+    .inquiry-form {
+        flex-direction: column;
+    }
+    .inquiry-input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .work-block:before {
+        width: 0;
+    }
+    .travel-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .travel-content {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery-img,
+    .gallery-img-center,
+    .gallery-img-left,
+    .gallery-img-bottom,
+    .gallery-img-bottom-center,
+    .gallery-img-bottom-right {
+        width: 100%;
+    }
+    .gallery-img-bottom-center {
+        transform: translate(0,0);
+    }
+    .breand {
+        height: auto;
+    }
+    .client-chat {
+        color: black;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 2px 2px 13px 0px rgba(34, 60, 80, 0.29);
+    }
+    .client-quote {
+        color: black;
+    }
+    .client-title, 
+    .gallery-title,
+    .travel-title,
+    .work-title,
+    .journal-title {
+        font-size: 25px;
+    }
+    .client {
+        height: auto;
+    }
+    .client-form {
+        transform: translate(0,0);
+        width: 100%;
+    }
+    .footer-text,
+    .footer-copyrights {
+        font-size: 14px;
+    }
 }
 
 /* ≥576px */
